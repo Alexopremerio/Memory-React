@@ -1,0 +1,59 @@
+.Board {
+    margin: auto;
+    width: 650px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0;
+    justify-content: space-between;
+    animation: slideIn 1s ease-out forwards;
+}
+
+.LeftClip {
+    height: 100vw;
+    width: 10%;
+    background-color: rgb(27, 50, 73);
+    position: absolute;
+    
+}
+
+.RightClip {
+    height: 100vw;
+    width: 10%;
+    right: 0;
+    background-color: rgb(60, 106, 153);
+    position: absolute;
+    
+}
+
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+    @media screen and (max-width: 1085px) {
+        .LeftClip {
+            display: none;
+        }
+        
+        .RightClip {
+            display: none;
+            
+        }
+    }
+

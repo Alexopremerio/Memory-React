@@ -1,0 +1,56 @@
+
+
+.controlsWrapper {
+    height: 10vh;
+    margin: auto;
+    margin-top: 50px;
+    width: 80vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.list {
+    width: 70px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.restartBtn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5%;
+    background-color: white;
+    color: #2D4256;
+    cursor: pointer;
+}
+
+.restartBtn:hover {
+   
+    border-radius: 10%;
+    background-color: rgb(158, 54, 13);
+    color: white;
+}
+
+
+
+
+.turns {
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+}
+
+@media screen and (max-width: 1085px) {
+    .LeftClip {
+        display: none;
+    }
+    
+    .RightClip {
+        display: none;
+        
+    }
+}

@@ -1,0 +1,72 @@
+.Modal {
+    width: 40vh;
+    height: 40vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+.Message {
+    padding: 20px;
+    text-align: center;
+}
+
+.PlayAgain {
+    text-align: center;
+    color: rgb(158, 54, 13);
+    padding: 20px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.PlayAgain:hover{
+    color: burlywood;
+    font-size: 22px;
+    box-sizing: border-box;
+    
+}
+
+.backdrop {
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: openModal 1s ease-out forwards;
+}
+
+
+
+@keyframes openModal {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes closeModal {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(60%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
