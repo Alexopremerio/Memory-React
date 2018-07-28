@@ -1,1 +1,1 @@
-First Project for learning React.js
+My first project for learning React.js
